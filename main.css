@@ -1,20 +1,25 @@
-ul {
+nav {
     list-style-type: none;
     overflow: hidden;
     background-color: grey;
+    text-align: center;
 }
 
-li {
-    float: left;
+nav li {
+    display: inline;
 }
 
-li a{
-    display: block;
+nav li a{
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 10px 10px;
 }
 
-li a:hover{
+nav li a:hover{
     background-color: black;
+}
+
+.world{
+    background-image: url(Earth.jpg);
 }
