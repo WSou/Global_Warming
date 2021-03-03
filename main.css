@@ -23,3 +23,78 @@ nav li a:hover{
 .world{
     background-image: url(Earth.jpg);
 }
+
+.pie {
+    overflow: hidden;
+    position: relative;
+    margin: 5em auto;
+    border: black;
+    padding: 0;
+    width: 35em; height: 35em;
+    border-radius: 50%;
+    list-style: none;
+}
+
+.slice{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; height: 50%;
+    transform-origin: 0% 100%;
+}
+.slice-contents{
+    position: absolute;
+    left: -100%;
+    width: 200%; height: 200%;
+    border-radius: 50%;
+}
+
+.slice:nth-child(1){
+    transform: rotate(0deg) skewY(21.6deg) scale(1.2);
+}
+
+.slice:nth-child(1) .slice-contents{
+    transform: skewY(-30deg);
+        background: lightblue;
+}
+
+.slice:nth-child(2){
+    transform: rotate(111.6deg) skewY(7.2deg) scale(1.2);
+}
+
+.slice:nth-child(2) .slice-contents{
+    transform: skewY(-30deg);
+        background: yellow;
+}
+
+.slice:nth-child(3){
+    transform: rotate(208.8deg) skewY(-21.6deg) scale(1.2);
+}
+
+.slice:nth-child(3) .slice-contents{
+    transform: skewY(-30deg);
+        background: green;
+}
+
+.slice:nth-child(4){
+    transform: rotate(277.2deg) skewY(-32.4deg) scale(1.2);
+}
+
+.slice:nth-child(4) .slice-contents{
+    transform: skewY(-30deg);
+        background: red;
+}
+
+.slice:nth-child(5){
+    transform: rotate(334.8deg) skewY(-64.8deg) scale(1.2);
+}
+
+.slice:nth-child(5) .slice-contents{
+    transform: skewY(-30deg);
+        background: rgb(0, 102, 255);
+}
+
+.slice:hover .slice-contents{
+    background: grey;
+}
